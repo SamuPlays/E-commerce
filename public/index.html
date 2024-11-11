@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce site com pagamento</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'/>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <a href="#" class="logo">E-Commerce</a>
+            <i class="bx bx-shopping-bag" id="cart-icon" data-quantity="0"></i>
+            <div class="cart">
+                <h2 class="cart-title">Seu Carrinho</h2>
+                <div class="cart-content"></div>
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">R$0</div>
+                </div>
+                <button type="button" class="btn-buy">Pague agora</button>
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+    <!-- produtos -->
+    <section class="shop container">
+        <h2 class="section-title">Comprar Produtos</h2>
+        <div class="shop-content">
+            <!-- caixa 1 -->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZmziDO3kxzWUJHe7VM-eOvasCKPD2zwpOD9KhbXwAXHIxapBaN324BmRTUVWhK0RHbM6kguWbUEHhmuOZF0IsfGAKRAwJoHQ0lZyuakF7PGhP8KPw_BECoCEkX2Mo3zZjFwAQH5o2nVhRhNeutiZFeYaVhAKMOGVg8iIs8ISmnIB8Q3lpb-lWpyJHQVE/s600/im4.webp" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">Gabinete</h2>
+                <span class="price">R$250</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!-- caixa 2-->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5rxGttP9I5c772N_gBxG46DteqwGm4jJLZvt_WzY3xqr0ZR03IOYy2-MQrhEGFE6WiZVYj-Il64UID9C_y2l-c42RxHXvoJwwuWO_yB8bCYEh3xyrWxwDJ0iqkFA122TvFF_t6iyu9r2e_JkjXULKgXpUsnQAIIGiSnAOmFNYyr8W_PbM3A9ZiQrEjH0/s600/img5.webp" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">Teclado</h2>
+                <span class="price">R$300</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!-- caixa 3-->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZLuxpzjurfearcELbrqd_Px-s-HyZF68bTzuAI5kBAgP24DQgbnnc89WRlnxmLOMCsB1IAivnrtNOxJm8MivXrd4uOQmycgFCcgElE8KXLxgZVcNb-hxgyzb8Xdy46Mua_TVFyAoCRJlfYoFUlQk7gi3Cn-PPZ-5zd4r8vAXuKlEQmdFJ5ur8k4BMmHo/s600/img-1.webp" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">Fonte</h2>
+                <span class="price">R$400</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!-- caixa 4-->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj1wbPisMY97Nk4vfFkJ4FrHUaCt53dkfcuQbfa8kL0U6tAoXJWQVqmacJHAyemJxSt7NZejSshatQedG_n6fYnccwpss8SUodEcmTDibU98KwifT87xcaqLlSbDcuH9RKimuzKjla4DSKT87UYD0CwVSrnA49g5H3_LsbydHi4ten3pXqFXKZasYDDCFg/s600/img-2.webp" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">Placa de Vídeo</h2>
+                <span class="price">R$750</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!-- caixa 5-->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEie1oII7XQ-c15qay0TXiIyHjkZlkYbCSZi5udJkCsZTDEP2X9YwlVghH7O4m-_DFEZswKQe-z2nrJ3YVyLNykh3X6NHVpHclKaJWCIPml8MOHvanQ3eCdH_kBRoPDOHpfu5iSKtezj68tgPuSIsEJEX4ZRyDjf2zdgUBODIx_RHhTkCmOAWuGMoik6v7w/s600/img-3.webp" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">Placa Mãe</h2>
+                <span class="price">R$500</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!-- caixa 6-->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhpFcWoFFPtRa2hcVLrACS0jMIfdH77xR__cywReQzBSTwKb1_eCnP8yTllIaY_OFFTw6v5ee-hZNoupbXGCGi8KkNlF_GW1N4Xy5ty-__LeJXHnFR5h7YYnusDLDWQaeP3mEa44g3oVRcqM_EjaRQstyKXWORXGHAsMIFUdz0LzUvaBmq8FcVGDf7ZNg/s600/img-6.webp" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">Mouse</h2>
+                <span class="price">R$200</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!-- caixa 7-->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlQS0gfF5hVyqvNlrmiJH4TWyNv079oeLj3HhJwQM5rcQyJ0f9AZ8hSJObocojJCHSNYb5dXubK2OxyfWdOHG4X68lGpBpKO8-4cT-eiHoPRRMKOREumcZtVFZWgxydVnUvwGiKnTzpXJrNyowSa4TkVcGIJkZHXQSi8yixIvRRe5hzS99FLAALf-IL8s/s542/img-7.webp" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">Headset</h2>
+                <span class="price">R$500</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+            <!-- caixa 8-->
+            <div class="product-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjkRHTSCbsVTjyL6_ITt-md6Xv5BSH8srSGQMiYMCaC1zFzd_x_uFz26HoCsgGE8-vawMasa0wTNVD_W_W4J7Fg2q13RK2stcJiU-uv4KSxbhyphenhyphenKKOQ7iDNEDw86FNrRxmPBcLkEUCFeANvR-8HO_j_e4UsL-TXIGyouFaSQrb99MYIEzKxmjr36q4FBp5M/s600/img-8.webp" 
+                alt="" 
+                class="product-img"
+                />
+                <h2 class="product-title">Cooler para Processador</h2>
+                <span class="price">R$100</span>
+                <i class='bx bx-shopping-bag add-cart' ></i>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
